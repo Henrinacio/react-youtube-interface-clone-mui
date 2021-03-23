@@ -1,6 +1,6 @@
 ## 💻 Project
 
-The aim of this project is to clone Youtube interface using React and Material UI.
+The aim of this project is to develop my design skills with Material UI by cloning the Youtube interface using React.
 
 ## 🚀 Technologies
 
