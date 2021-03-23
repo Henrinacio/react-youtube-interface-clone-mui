@@ -156,20 +156,22 @@ function Home() {
               <Typography variant="body4">
                 Faça seu login para curtir vídeos, comentar e se inscrever.
               </Typography>
-              <Button
-                startIcon={<AccountCircle />}
-                variant="outlined"
-                color="secondary"
-              >
-                Fazer Login
-              </Button>
+              <Box mt={2}>
+                <Button
+                  startIcon={<AccountCircle />}
+                  variant="outlined"
+                  color="secondary"
+                >
+                  Fazer Login
+                </Button>
+              </Box>
             </Box>
           </div>
         </Drawer>
         <Box p={4}>
           <Toolbar />
           <Grid container>
-            <Grid>teste</Grid>
+            <Grid item>teste</Grid>
           </Grid>
         </Box>
       </Box>
