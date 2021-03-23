@@ -14,6 +14,7 @@ import Divider from '@material-ui/core/Divider';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import TextField from '@material-ui/core/TextField';
 // Material Icons
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
@@ -24,6 +25,7 @@ import Explore from '@material-ui/icons/Explore';
 import Subscriptions from '@material-ui/icons/Subscriptions';
 import VideoLibrary from '@material-ui/icons/VideoLibrary';
 import History from '@material-ui/icons/History';
+import Search from '@material-ui/icons/Search';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -58,6 +60,9 @@ const useStyles = makeStyles(theme => ({
   grow: {
     flexGrow: 1,
   },
+  logo: {
+    height: 25,
+  },
 }));
 
 function Home() {
@@ -75,6 +80,29 @@ function Home() {
           >
             <MenuIcon />
           </IconButton>
+          <img src="/images/preto.png" alt="logo" className={classes.logo} />
+          <Toolbar />
+          <Grid
+            container
+            spacing={1}
+            alignItems="center"
+            direction="row"
+            justify="center"
+          >
+            <Grid item>
+              <TextField
+                color="secondary"
+                variant="outlined"
+                size="small"
+                placeholder="Pesquisar"
+              />
+            </Grid>
+            <Grid item>
+              <IconButton>
+                <Search />
+              </IconButton>
+            </Grid>
+          </Grid>
           <div className={classes.grow} />
           <IconButton className={classes.icons} color="inherit">
             <Apps />
